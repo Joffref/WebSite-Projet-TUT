@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projet tutoré</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+<body>
+  <div>
+    <section class="hero is-info is-large has-background-dark">
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                    <a class="navbar-item" href="http://rt.pu-pm.univ-fcomte.fr/index.php/Accueil">
+                    <img src="https://i.ytimg.com/vi/J1t99S_vR-Q/maxresdefault.jpg" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroB" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroB" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
+                <div class="navbar-end">
+                  <a class="navbar-item is-active">
+                    Home
+                  </a>
+                  <a class="navbar-item" href = "{{ url_for('mappage') }}">
+                    Map
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <p class="title">
+              sounding balloon
+            </p>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil totam molestias cum ratione aliquam, nostrum ea deserunt sunt rem, ut reiciendis. Dolores, velit quia dolor atque blanditiis accusamus odio magni.
+            </p>
+          </div>
+        </div>
+      
+        <div class="hero-foot">
+          <nav class="tabs is-boxed is-fullwidth">
+            <div class="container">
+              <ul>
+                <li class="is-active">
+                  <a>Overview</a>
+                </li>
+                <li>
+                  <a href = "{{ url_for('team') }}">Teams</a>
+                </li>
+                <li>
+                  <a>Project specifications</a>
+                </li>
+                <li>
+                  <a>Testimonial</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </div>
+</body>
+</html>
