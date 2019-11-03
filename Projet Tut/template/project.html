@@ -27,7 +27,7 @@
               </div>
               <div id="navbarMenuHeroB" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
                 <div class="navbar-end">
-                  <a class="navbar-item is-active">
+                  <a class="navbar-item is-active" href = "{{ url_for('index') }} ">
                     Home
                   </a>
                   <a class="navbar-item" href = "{{ url_for('mappage') }}">
@@ -39,28 +39,21 @@
           </nav>
         </div>
       
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <p class="title">
-              sounding balloon
-            </p>
-            <p class="subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil totam molestias cum ratione aliquam, nostrum ea deserunt sunt rem, ut reiciendis. Dolores, velit quia dolor atque blanditiis accusamus odio magni.
-            </p>
-          </div>
+        <div class="hero-body" height = "70%">
+          <img src = "https://i2.wp.com/whiterivernow.com/wp-content/uploads/2018/12/Under-Construction-Sign.png?fit=1230%2C580&ssl=1">
         </div>
       
         <div class="hero-foot">
           <nav class="tabs is-boxed is-fullwidth">
             <div class="container">
               <ul>
-                <li class="is-active">
+                <li>
                   <a href = "{{url_for('index')}}">Overview</a>
                 </li>
                 <li>
-                  <a href = "{{ url_for('team') }}">Teams</a>
+                  <a href = "{{url_for('team')}}">Teams</a>
                 </li>
-                <li>
+                <li class="is-active">
                   <a href = "{{url_for('project')}}">Project specifications</a>
                 </li>
                 <li>

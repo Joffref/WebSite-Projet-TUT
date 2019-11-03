@@ -26,5 +26,13 @@ def mappage():
 def team():
     return render_template("teams.html")
 
+@app.route('/project specification')
+def project():
+    return render_template("project.html")
+
+@app.route('/testimonial')
+def testimonial():
+    return render_template("testimonial.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
